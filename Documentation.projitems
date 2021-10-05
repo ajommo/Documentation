@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>3041990d-029f-4f78-8eb9-6eef597a62b5</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Game.Documentation</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)bundles_controller.html" />
+    <Content Include="$(MSBuildThisFileDirectory)assets_controller.html" />
+    <Content Include="$(MSBuildThisFileDirectory)credentials_controller.html" />
+    <Content Include="$(MSBuildThisFileDirectory)index.html" />
+    <Content Include="$(MSBuildThisFileDirectory)style.css" />
+  </ItemGroup>
+</Project>

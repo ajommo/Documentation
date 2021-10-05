@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title></title>
+    </head>
+    <body>
+        <h1>World</h1>
+        <h2>Bundles controller</h2>
+        <ul>
+            <li><a class="index" href="#bundle_model">Bundle model</a></li>
+            <li><a class="index" href="#get_bundle">GET Bundle</a></li>
+            <li><a class="index" href="#get_binary">GET Binary</a></li>
+        </ul>
+        <div class="split"></div>
+        <h3 id="assets_model">Bundle model</h3>
+        <div>
+            <div class="left">
+                <p>Description</p>
+                <div class="table">
+                    <div class="left"><p>id</p></div>
+                    <div class="right"><p>Unique identifyer.</p></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="right">
+                <h4>Model</h4>
+                <div class="example">
+<pre>
+{
+    "<span class="key">id</span>": <span class="string">"primitives"</span>,
+}
+</pre>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="split"></div>
+        <h3 id="get_bundle"><span class="method get">GET</span> Bundle</h3>
+        <div>
+            <div class="left">
+                <p>Description</p>
+            </div>
+            <div class="right">
+                <h4>Request</h4>
+                <div class="example">
+                    <div class="left">
+                        <p>
+                            Path:<br>
+                            Headers:
+                        </p>
+                    </div>
+                    <div class="right">
+                        <p>
+                            GET /api/bundles/{id}<br>
+                            Content-Type: application/json
+                        </p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <h4>Response</h4>
+                <div class="example">
+<pre>
+{
+    "<span class="key">id</span>": <span class="string">"primitives"</span>,
+}
+</pre>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="split"></div>
+        <h3 id="get_binary"><span class="method get">GET</span> Binary</h3>
+        <div>
+            <div class="left">
+                <p>Description</p>
+            </div>
+            <div class="right">
+                <h4>Request</h4>
+                <div class="example">
+                    <div class="left">
+                        <p>
+                            Path:<br>
+                            Headers:
+                        </p>
+                    </div>
+                    <div class="right">
+                        <p>
+                            GET /api/bundles/{id}/binary<br>
+                            Content-Type: application/octet-stream
+                        </p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <h4>Response</h4>
+                <div class="example">
+<pre>
+...
+</pre>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </body>
+</html>
