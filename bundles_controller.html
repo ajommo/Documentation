@@ -10,8 +10,9 @@
         <h2>Bundles controller</h2>
         <ul>
             <li><a class="index" href="#bundle_model">Bundle model</a></li>
+            <li><a class="index" href="#get_bundles">GET Bundles</a></li>
             <li><a class="index" href="#get_bundle">GET Bundle</a></li>
-            <li><a class="index" href="#get_binary">GET Binary</a></li>
+            <li><a class="index" href="#get_binary">GET Bundle binary</a></li>
         </ul>
         <div class="split"></div>
         <h3 id="assets_model">Bundle model</h3>
@@ -29,8 +30,48 @@
                 <div class="example">
 <pre>
 {
-    "<span class="key">id</span>": <span class="string">"primitives"</span>,
+    "<span class="key">id</span>": "<span class="string">primitives</span>",
+    "<span class="key">name</span>": "<span class="string">Primitives</span>",
+    "<span class="key">version</span>": <span class="value">1</span>,
 }
+</pre>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="split"></div>
+        <h3 id="get_bundles"><span class="method get">GET</span> Bundles</h3>
+        <div>
+            <div class="left">
+                <p>Description</p>
+            </div>
+            <div class="right">
+                <h4>Request</h4>
+                <div class="example">
+                    <div class="left">
+                        <p>
+                            Path:<br>
+                            Headers:
+                        </p>
+                    </div>
+                    <div class="right">
+                        <p>
+                            GET /api/bundles/<br>
+                            Content-Type: application/json
+                        </p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <h4>Response</h4>
+                <div class="example">
+<pre>
+[
+    {
+        "<span class="key">id</span>": "<span class="string">primitives</span>",
+        "<span class="key">name</span>": "<span class="string">Primitives</span>",
+        "<span class="key">version</span>": <span class="value">1</span>,
+    }
+]
 </pre>
                 </div>
             </div>
@@ -63,7 +104,9 @@
                 <div class="example">
 <pre>
 {
-    "<span class="key">id</span>": <span class="string">"primitives"</span>,
+    "<span class="key">id</span>": "<span class="string">primitives</span>",
+    "<span class="key">name</span>": "<span class="string">Primitives</span>",
+    "<span class="key">version</span>": <span class="value">1</span>,
 }
 </pre>
                 </div>
@@ -71,7 +114,7 @@
             <div class="clear"></div>
         </div>
         <div class="split"></div>
-        <h3 id="get_binary"><span class="method get">GET</span> Binary</h3>
+        <h3 id="get_binary"><span class="method get">GET</span> Bundle binary</h3>
         <div>
             <div class="left">
                 <p>Description</p>
