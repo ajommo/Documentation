@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Instance controller</title>
+    </head>
+    <body>
+        <h1>World</h1>
+        <h2>Instance controller</h2>
+        <ul>
+            <li><a class="index" href="#introduction">Introduction</a></li>
+            <li><a class="index" href="#model">Model</a></li>
+            <li><a class="index" href="#get_asset">GET Instance</a></li>
+        </ul>
+        <div class="split"></div>
+        <h3 id="introduction">Introduction</h3>
+        <div>
+            <div class="left">
+                <p>Description</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="split"></div>
+        <h3 id="model">Model</h3>
+        <div>
+            <div class="left">
+                <table>
+                    <tr>
+                        <td>id</td>
+                        <td>Unique identifyer.</td>
+                    </tr>
+                    <tr>
+                        <td>description</td>
+                        <td>Description of the instance.</td>
+                    </tr>
+                    <tr>
+                        <td>asset</td>
+                        <td>Id of the asset.</td>
+                    </tr>
+                    <tr>
+                        <td>scale</td>
+                        <td>Scale of the asset represented by a Vector3.</td>
+                    </tr>
+                    <tr>
+                        <td>rotation</td>
+                        <td>Rotation of the asset represented by a Vector3.</td>
+                    </tr>
+                    <tr>
+                        <td>translation</td>
+                        <td>Translation of the asset represented by a Vector3.</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="right">
+                <h4>Model</h4>
+                <div class="example">
+<pre>
+{
+    "<span class="key">id</span>": "<span class="string">d47755b2-71b1-4ac1-bafa-c5386ae0d467</span>",
+    "<span class="key">description</span>": "<span class="string">Cube</span>",
+    "<span class="key">prefab</span>": "<span class="string">Cube</span>",
+    "<span class="key">scale</span>": {
+        "<span class="key">x</span>": <span class="value">1.0</span>,
+        "<span class="key">y</span>": <span class="value">1.0</span>,
+        "<span class="key">z</span>": <span class="value">1.0</span>
+    },
+    "<span class="key">rotation</span>": {
+        "<span class="key">x</span>": <span class="value">0.0</span>,
+        "<span class="key">y</span>": <span class="value">0.0</span>,
+        "<span class="key">z</span>": <span class="value">0.0</span>
+    },
+    "<span class="key">translation</span>": {
+        "<span class="key">x</span>": <span class="value">0.0</span>,
+        "<span class="key">y</span>": <span class="value">0.0</span>,
+        "<span class="key">z</span>": <span class="value">0.0</span>
+    }
+}
+</pre>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="split"></div>
+        <h3 id="get_asset"><span class="method get">GET</span> Instance</h3>
+        <div>
+            <div class="left">
+                <p>Description</p>
+            </div>
+            <div class="right">
+                <h4>Request</h4>
+                <div class="example">
+                    <div class="left">
+                        <p>
+                            Path:<br>
+                            Headers:
+                        </p>
+                    </div>
+                    <div class="right">
+                        <p>
+                            GET /api/instance/{id}<br>
+                            Content-Type: application/json
+                        </p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <h4>Response</h4>
+                <div class="example">
+<pre>
+{
+    "<span class="key">id</span>": "<span class="string">d47755b2-71b1-4ac1-bafa-c5386ae0d467</span>",
+    "<span class="key">description</span>": "<span class="string">Cube</span>",
+    "<span class="key">prefab</span>": "<span class="string">Cube</span>",
+    "<span class="key">scale</span>": {
+        "<span class="key">x</span>": <span class="value">1.0</span>,
+        "<span class="key">y</span>": <span class="value">1.0</span>,
+        "<span class="key">z</span>": <span class="value">1.0</span>
+    },
+    "<span class="key">rotation</span>": {
+        "<span class="key">x</span>": <span class="value">0.0</span>,
+        "<span class="key">y</span>": <span class="value">0.0</span>,
+        "<span class="key">z</span>": <span class="value">0.0</span>
+    },
+    "<span class="key">translation</span>": {
+        "<span class="key">x</span>": <span class="value">0.0</span>,
+        "<span class="key">y</span>": <span class="value">0.0</span>,
+        "<span class="key">z</span>": <span class="value">0.0</span>
+    }
+}
+</pre>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </body>
+</html>

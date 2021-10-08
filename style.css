@@ -143,6 +143,15 @@ td:first-of-type {
     border-radius: 4px;
 }
 
+.monospace {
+    font-family: monospace;
+    border: solid 1px #aaaaaa;
+    background: #f3f3f3;
+    padding: 0px 1px 2px 1px;
+    position: relative;
+    top: -1px;
+}
+
 a {
     color: #0099ff;
     text-decoration: none;
