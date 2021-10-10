@@ -12,6 +12,7 @@
     <Content Include="$(MSBuildThisFileDirectory)bundles_controller.html" />
     <Content Include="$(MSBuildThisFileDirectory)assets_controller.html" />
     <Content Include="$(MSBuildThisFileDirectory)credentials_controller.html" />
+    <Content Include="$(MSBuildThisFileDirectory)instance_controller.html" />
     <Content Include="$(MSBuildThisFileDirectory)repositories.html" />
     <Content Include="$(MSBuildThisFileDirectory)index.html" />
     <Content Include="$(MSBuildThisFileDirectory)style.css" />
